@@ -8,6 +8,12 @@ function resetAndStart() {
 $('.crystals').empty();
 
 $('#previous').empty();
+var images = [
+    'assets/images/agatemeaning.jpg',
+    'assets/images/cams-crystals-etsy.jpg',
+    'assets/images/HEA-0002.jpg',
+    'assets/images/rsqs231-rose-quartz.jpg'
+];
 
 random_result = Math.floor(Math.random() * 101) + 19;
 
@@ -23,9 +29,15 @@ console.log(random);
             'data-random': random
         });
 
+        crystal.css({
+            'background-image':"url('" + images[i] + "'",
+            'background-size':'cover'
+        });
+
     $(".crystals").append(crystal);
 
     }
+    $('#previous').html(previous);
 }
 
 resetAndStart();
