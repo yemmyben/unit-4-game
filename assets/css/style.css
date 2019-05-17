@@ -1,0 +1,22 @@
+
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.crystals{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.crystal{
+    border: 5px solid green;
+    height: 200px;
+    width: 200px;
+    background: gray;
+    margin: 0 5px; 
+    
+}
